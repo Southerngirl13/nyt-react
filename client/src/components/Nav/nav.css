@@ -1,3 +1,17 @@
 .navbar navbar-expand-lg {
     background-color: aqua;
 }
+
+.navbar {
+   /*  background-image: url("./nyt-color.jpg"); */
+    color: white;
+    /* background-size: cover; */
+    background-color: red;
+}
+
+navbar-brand {
+    color: purple;
+}
+a {
+    color: white;
+}
