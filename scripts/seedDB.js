@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const db = require("../models");
 mongoose.Promise = global.Promise;
 
-// This file empties the Books collection and inserts the books below
+// This file empties the Article collection and inserts the articles below
 
 //mongoose.connect(
 // process.env.MONGODB_URI || "mongodb://localhost/reactreadinglist",
@@ -19,7 +19,7 @@ mongoose.connect(
 );
 
 
-//const bookSeed = [
+//const articleSeed = [
  // {
  //   title: "The Dead Zone",
  //   author: "Stephen King",
@@ -150,7 +150,7 @@ const articleSeed = [
 
 // db.Book
 //   .remove({})
-//   .then(() => db.Book.collection.insertMany(bookSeed))
+//   .then(() => db.Book.collection.insertMany(articleSeed))
 //   .then(data => {
 //     console.log(data.insertedIds.length + " records inserted!");
 //     process.exit(0);
