@@ -1,0 +1,9 @@
+.form-control {
+    font-family: 'avenir';
+}
+
+.search-button {
+    background:	#557A95;
+    color: white;
+    font-weight: bold;
+}
