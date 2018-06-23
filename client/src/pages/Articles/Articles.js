@@ -59,7 +59,7 @@ class Articles extends Component {
         <Row>
           <Col size="md-12">
             <Jumbotron>
-            <h1>SEARCH FOR & ANNOTATE ARTICLES OF INTEREST!</h1>
+            <h2>SEARCH FOR & ANNOTATE</h2> <h2>ARTICLES OF INTEREST!</h2>
             </Jumbotron>
             <form>
               <Input

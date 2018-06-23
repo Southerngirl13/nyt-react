@@ -1,4 +1,16 @@
-.jumbotron {
+/* .jumbotron {
    
-   /* background-color: #e74944; */
-  }
+   /* background-color: #e74944; 
+  } */
+
+ .jumbotron {
+   /* background-image: url("./nyt-color.jpg"); */
+    background-size: cover;
+} 
+h2 {
+    font-weight: 90;
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: black;
+    font-size: 4vw;
+}
