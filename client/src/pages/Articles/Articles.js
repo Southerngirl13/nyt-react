@@ -57,48 +57,48 @@ class Articles extends Component {
     return (
       <Container fluid>
         <Row>
-          <Col size="md-6">
+          <Col size="md-12">
             <Jumbotron>
-              <h1>What articles Should I Read?</h1>
+            <h1>SEARCH FOR & ANNOTATE ARTICLES OF INTEREST!</h1>
             </Jumbotron>
             <form>
               <Input
                 value={this.state.title}
                 onChange={this.handleInputChange}
                 name="title"
-                placeholder="Title (required)"
+                placeholder="TOPIC (required)"
               />
               <Input
                 value={this.state.author}
                 onChange={this.handleInputChange}
                 name="author"
-                placeholder="Author (required)"
+                placeholder="START YEAR (required)"
               />
               <TextArea
                 value={this.state.synopsis}
                 onChange={this.handleInputChange}
                 name="synopsis"
-                placeholder="Synopsis (Optional)"
+                placeholder="END YEAR (required)"
               />
               <FormBtn
                 disabled={!(this.state.author && this.state.title)}
                 onClick={this.handleFormSubmit}
               >
-                Submit Book
+                Search
               </FormBtn>
             </form>
           </Col>
           <Col size="md-6 sm-12">
             <Jumbotron>
-              <h1>articles On My List</h1>
+              <h1>SAVED ARTICLES</h1>
             </Jumbotron>
             {this.state.articles.length ? (
               <List>
-                {this.state.articles.map(book => (
+                {this.state.articles.map(article => (
                   <ListItem key={Articles._id}>
-                    <Link to={"/articles/" + book._id}>
+                    <Link to={"/articles/" + article._id}>
                       <strong>
-                        {book.title} by {book.author}
+                        {article.title} by {article.author}
                       </strong>
                     </Link>
                     <DeleteBtn onClick={() => this.deleteArticle(Articles._id)} />
