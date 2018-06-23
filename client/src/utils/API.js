@@ -1,6 +1,6 @@
 import axios from "axios";
 const BASEURL="";
-const APIKEY="";
+const APIKEY="44e03f9561ad42cc9aecabe24010068f";
 
 export default {
   // Gets all articles
